@@ -1,0 +1,14 @@
+[role="search-tag"] {
+    flex-flow: row;
+    border-bottom: rgba(0, 0, 0, 0.10) solid 2px;
+    padding: 5px;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+    }
+
+    &.included {
+        background: rgba(0, 0, 0, 0.20);
+    }
+}

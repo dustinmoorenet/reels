@@ -1,0 +1,15 @@
+[role="filter-control"] {
+    display: flex;
+    flex-flow: column;
+
+    [role="search-text"] {
+        box-sizing: border-box;
+        margin: 10px 0;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .tags {
+
+    }
+}

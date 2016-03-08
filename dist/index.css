@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: white;
+  font-family: Sans-Serif; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1.25em; }
+
+[role="search-tag"] {
+  flex-flow: row;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 2px;
+  padding: 5px; }
+  [role="search-tag"]:hover {
+    background: rgba(0, 0, 0, 0.05);
+    cursor: pointer; }
+  [role="search-tag"].included {
+    background: rgba(0, 0, 0, 0.2); }
+
+[role="filter-control"] {
+  display: flex;
+  flex-flow: column; }
+  [role="filter-control"] [role="search-text"] {
+    box-sizing: border-box;
+    margin: 10px 0;
+    line-height: 20px;
+    width: 100%; }
+
+[role="list-view"] {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px; }
+  [role="list-view"] h1 {
+    flex: 1 100%;
+    margin-bottom: 10px; }
+  [role="list-view"] [role="filter-control"] {
+    flex: 0 0 200px; }
+  [role="list-view"] .content {
+    flex: 1 0;
+    margin: 20px; }
+  [role="list-view"] [role="filter-list"] {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 10px; }
+    [role="list-view"] [role="filter-list"] > button {
+      flex: 0 0 100px;
+      margin: 15px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      border: 0;
+      cursor: pointer; }
+    [role="list-view"] [role="filter-list"] ul {
+      flex: 1 0;
+      display: flex;
+      flex-flow: row; }
+      [role="list-view"] [role="filter-list"] ul li {
+        cursor: pointer;
+        margin: 10px 10px 10px 0px;
+        padding: 13px 10px;
+        background: rgba(0, 0, 0, 0.3); }
+  [role="list-view"] [role="play-list"] {
+    display: flex;
+    flex-flow: column; }
+    [role="list-view"] [role="play-list"] li {
+      margin-bottom: 10px; }
+
+[role="movie-view"] {
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; }
+  [role="movie-view"] a,
+  [role="movie-view"] a:visited {
+    color: rgba(255, 255, 255, 0.75); }
+  [role="movie-view"] h2 {
+    margin-bottom: 20px; }
+
+[role="list-item"] {
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 10px; }
+  [role="list-item"]:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+  [role="list-item"] .image-holder {
+    flex: 0 0 148px;
+    width: 148px;
+    height: 110px; }
+    [role="list-item"] .image-holder img {
+      width: 100%;
+      height: 100%; }
+  [role="list-item"] .info {
+    flex: 1 0;
+    padding-left: 10px; }
+  [role="list-item"] .header {
+    display: flex;
+    margin-bottom: 10px; }
+    [role="list-item"] .header .description {
+      flex: 1 0;
+      font-weight: bold;
+      font-size: 1.2em; }
+    [role="list-item"] .header .date {
+      text-align: right;
+      flex: 0 0 100px; }
+  [role="list-item"] .tags {
+    flex: 1 0; }

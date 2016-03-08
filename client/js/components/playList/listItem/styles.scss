@@ -1,0 +1,46 @@
+[role="list-item"] {
+    background: rgba(0, 0, 0, 0.05);
+    display: flex;
+    padding: 10px;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.20);
+        cursor: pointer;
+    }
+
+    .image-holder {
+        flex: 0 0 148px;
+        width: 148px;
+        height: 110px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .info {
+        flex: 1 0;
+        padding-left: 10px;
+    }
+
+    .header {
+        display: flex;
+        margin-bottom: 10px;
+
+        .description {
+            flex: 1 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .date {
+            text-align: right;
+            flex: 0 0 100px;
+        }
+    }
+
+    .tags {
+        flex: 1 0;
+    }
+}

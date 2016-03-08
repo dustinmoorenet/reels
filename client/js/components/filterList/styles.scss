@@ -1,0 +1,56 @@
+[role="list-view"] {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+
+    h1 {
+        flex: 1 100%;
+        margin-bottom: 10px;
+    }
+
+    [role="filter-control"] {
+        flex: 0 0 200px;
+    }
+
+    .content {
+        flex: 1 0;
+        margin: 20px;
+    }
+
+    [role="filter-list"] {
+        display: flex;
+        flex-flow: row;
+        margin-bottom: 10px;
+
+        > button {
+            flex: 0 0 100px;
+            margin: 15px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        ul {
+            flex: 1 0;
+            display: flex;
+            flex-flow: row;
+
+            li {
+                cursor: pointer;
+                margin: 10px 10px 10px 0px;
+                padding: 13px 10px;
+                background: rgba(0, 0, 0, 0.30);
+            }
+        }
+    }
+
+    [role="play-list"] {
+        display: flex;
+        flex-flow: column;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
